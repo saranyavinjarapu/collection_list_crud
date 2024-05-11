@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 36px;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.headerTabs {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.headerTabs a {
+  text-decoration: none;
+  color: inherit;
+  padding: 12px 12px 14px 12px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #2b2b2b;
+}
+
+.headerTabActive {
+  border-radius: 10px;
+  background-color: #ece6fa;
+}
