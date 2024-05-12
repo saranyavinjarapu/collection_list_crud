@@ -2,7 +2,8 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import down_arrow_icon from "../../assets/down_arrow_icon.png";
 import expand_arrow_icon from "../../assets/expand_arrow_icon.png";
-import folder_icon from "../../assets/folder_icon.png";
+import collection_icon from "../../assets/collection_icon.png";
+import new_collection_icon from "../../assets/new_collection.png";
 import { menuCollectionList } from "./helpers";
 import NavMenuItem from "./NavMenuItem";
 
@@ -19,15 +20,14 @@ const Navbar = () => {
             <NavMenuItem
               key={index}
               title={item}
-              displayIcon={folder_icon}
+              displayIcon={collection_icon}
               expandIcon={expand_arrow_icon}
             ></NavMenuItem>
           ))}
         <hr className={styles.divider}></hr>
         <NavMenuItem
           title="New Collection"
-          displayIcon={folder_icon}
-          expandIcon={expand_arrow_icon}
+          displayIcon={new_collection_icon}
         ></NavMenuItem>
       </div>
     </nav>

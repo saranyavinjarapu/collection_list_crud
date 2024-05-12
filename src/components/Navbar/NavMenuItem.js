@@ -10,7 +10,9 @@ const NavMenuItem = ({ displayIcon, title, expandIcon }) => {
         )}
         {title}
       </div>
-      <img src={expandIcon} alt="Nav Bar Expand/Collapse Icon"></img>
+      {expandIcon && (
+        <img src={expandIcon} alt="Nav Bar Expand/Collapse Icon"></img>
+      )}
     </div>
   );
 };
