@@ -1,9 +1,10 @@
-body {
+* {
+  box-sizing: border-box;
+}
+body,
+html {
   background-color: gainsboro;
   margin: 0;
-}
-
-.App {
-  text-align: center;
-  margin: 10px;
+  font-family: Inter;
+  font-weight: 500;
 }

@@ -5,8 +5,9 @@
 }
 .main {
   display: flex;
-  border: 2px solid grey;
+  padding: 24px 36px;
   gap: 20px;
+  background-color: #fbfbf9;
 }
 
 .main nav {
