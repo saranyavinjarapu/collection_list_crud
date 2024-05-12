@@ -3,8 +3,8 @@ import styles from "./Navbar.module.css";
 
 const NavMenuItem = ({ displayIcon, title, expandIcon }) => {
   return (
-    <div className={styles.navHeader}>
-      <div className={styles.navHeaderTitle}>
+    <div className={styles.navMenuItem}>
+      <div className={styles.navMenuItemName}>
         {displayIcon && (
           <img src={displayIcon} alt="Nav Bar Content Display Icon"></img>
         )}
