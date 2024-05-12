@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Collections.module.css";
+import CollectionDetail from "../CollectionDetail/CollectionDetail";
 
 const Collections = () => {
   return (
@@ -15,6 +16,7 @@ const Collections = () => {
         </div>
         <div className={styles.collectionResultsCount}>Showing 118 Results</div>
       </div>
+      <CollectionDetail></CollectionDetail>
     </div>
   );
 };
