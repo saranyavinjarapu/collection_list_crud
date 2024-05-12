@@ -17,13 +17,12 @@
 }
 
 .navHeaderTitle {
+  display: flex;
   padding: 12px 10px;
   font-size: 14px;
   line-height: 14px;
-  text-align: left;
-}
-
-img {
-  vertical-align: middle;
-  padding: 10px;
+  border: 2px solid red;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
 }
