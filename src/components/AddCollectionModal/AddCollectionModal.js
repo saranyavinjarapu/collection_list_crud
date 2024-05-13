@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext, useState } from "react";
 import styles from "./AddCollectionModal.module.css";
 import { CollectionContext } from "../../globals/helpers";
 
@@ -7,8 +7,9 @@ const initialNewCollectionModalData = {
   description: "",
 };
 
-const AddCollectionModal = ({ onSubmit, onClose }) => {
-  const { collectionList, setCollectionList } = useContext(CollectionContext);
+const AddCollectionModal = () => {
+  const { collectionList, setCollectionList, setIsModalOpen } =
+    useContext(CollectionContext);
   const [formState, setFormState] = useState(initialNewCollectionModalData);
 
   const handleInputChange = (event) => {
@@ -22,7 +23,7 @@ const AddCollectionModal = ({ onSubmit, onClose }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     setCollectionList([...collectionList, formState]);
-    onSubmit();
+    setIsModalOpen(false);
     setFormState(initialNewCollectionModalData);
   };
 
@@ -56,7 +57,10 @@ const AddCollectionModal = ({ onSubmit, onClose }) => {
         </div>
       </div>
       <div className={styles.newCollectionModalAction}>
-        <button className={styles.closeButton} onClick={onClose}>
+        <button
+          className={styles.closeButton}
+          onClick={() => setIsModalOpen(false)}
+        >
           Close
         </button>
         <button className={styles.createCollectionButton}>

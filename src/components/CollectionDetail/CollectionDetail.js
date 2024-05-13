@@ -5,7 +5,7 @@ import add_collection_icon from "../../assets/add_collection.png";
 import { CollectionContext } from "../../globals/helpers";
 
 const CollectionDetail = () => {
-  const { collectionList } = useContext(CollectionContext);
+  const { collectionList, setIsModalOpen } = useContext(CollectionContext);
   return (
     <div className={styles.collectionDetailMain}>
       {collectionList.map((item, index) => (
@@ -17,7 +17,11 @@ const CollectionDetail = () => {
         ></CollectionDetailItem>
       ))}
       <div className={styles.addCollectionItem}>
-        <img src={add_collection_icon} alt="add new collection item"></img>
+        <img
+          src={add_collection_icon}
+          alt="add new collection item"
+          onClick={() => setIsModalOpen(true)}
+        ></img>
       </div>
     </div>
   );
