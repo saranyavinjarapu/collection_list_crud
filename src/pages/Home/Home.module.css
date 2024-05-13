@@ -3,8 +3,6 @@
   flex-direction: column;
   height: 100%;
   width: 100vw;
-  flex: 1;
-  border: 1px solid red;
   overflow: hidden;
 }
 .main {
