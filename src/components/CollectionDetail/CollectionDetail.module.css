@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+  overflow: auto;
 }
 
 .collectionDetailItemCard {
@@ -38,10 +39,6 @@
   font-weight: 100;
 }
 
-img {
-  vertical-align: middle;
-}
-
 .statsInfo {
   display: flex;
   gap: 4px;
@@ -49,8 +46,8 @@ img {
 
 .statsButton {
   border-radius: 10px;
+  border: 1px solid #fff;
   padding: 6px 10px;
-  border: none;
   background-color: #ffffff;
   font-size: 13px;
   font-family: inter;
@@ -59,8 +56,8 @@ img {
 }
 
 .statsButton img {
-  padding-left: 4px;
   vertical-align: middle;
+  padding-left: 4px;
 }
 
 .collectionDetailItem {

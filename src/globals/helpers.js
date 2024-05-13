@@ -1,4 +1,8 @@
-export const collectionsList = [
+import { createContext } from "react";
+
+export const CollectionContext = createContext(null);
+
+export const existingCollectionList = [
   {
     title: "My Collection",
     description:

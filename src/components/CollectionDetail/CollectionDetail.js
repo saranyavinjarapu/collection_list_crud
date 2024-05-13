@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./CollectionDetail.module.css";
 import CollectionDetailItem from "./CollectionDetailItem";
-import { collectionsList } from "./helpers";
 import add_collection_icon from "../../assets/add_collection.png";
+import { CollectionContext } from "../../globals/helpers";
 
 const CollectionDetail = () => {
+  const { collectionList } = useContext(CollectionContext);
   return (
     <div className={styles.collectionDetailMain}>
-      {collectionsList.map((item, index) => (
+      {collectionList.map((item, index) => (
         <CollectionDetailItem
           key={index}
           title={item.title}
