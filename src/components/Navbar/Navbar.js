@@ -28,6 +28,7 @@ const Navbar = () => {
         <NavMenuItem
           title="New Collection"
           displayIcon={new_collection_icon}
+          isNewCollection={true}
         ></NavMenuItem>
       </div>
     </nav>

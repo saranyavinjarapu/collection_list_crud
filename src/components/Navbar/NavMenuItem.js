@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./Navbar.module.css";
+import { CollectionContext } from "../../globals/helpers";
 
-const NavMenuItem = ({ displayIcon, title, expandIcon }) => {
+const NavMenuItem = ({ displayIcon, title, expandIcon, isNewCollection }) => {
+  const { setIsModalOpen } = useContext(CollectionContext);
+
+  const handleOpenNewCollectionModal = () => {
+    if (isNewCollection) setIsModalOpen(true);
+  };
+
   return (
-    <div className={styles.navMenuItem}>
+    <div className={styles.navMenuItem} onClick={handleOpenNewCollectionModal}>
       <div className={styles.navMenuItemName}>
         {displayIcon && (
           <img src={displayIcon} alt="Nav Bar Content Display Icon"></img>

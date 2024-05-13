@@ -14,7 +14,11 @@ const CollectionDetailItem = ({ title, description, stats }) => {
         <div className={styles.statsInfo}>
           <button className={styles.statsButton}>
             {stats}
-            <img src={box_icon} alt="collection stats"></img>
+            <img
+              className={styles.statsImage}
+              src={box_icon}
+              alt="collection stats"
+            ></img>
           </button>
           <img src={delete_icon} alt="delete"></img>
         </div>
