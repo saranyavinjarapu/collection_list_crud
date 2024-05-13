@@ -1,0 +1,81 @@
+.collectionDetailMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.collectionDetailItemCard {
+  border: 1px solid #d9d9d6;
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.addCollectionItem {
+  border: 1px solid #d9d9d6;
+  border-radius: 12px;
+  background-color: #f1f1ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collectionDetailItemToolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.downloadButton {
+  background-color: #ece6fa;
+  border-radius: 10px;
+  padding: 6px 10px;
+  border: none;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 100;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.statsInfo {
+  display: flex;
+  gap: 4px;
+}
+
+.statsButton {
+  border-radius: 10px;
+  padding: 6px 10px;
+  border: none;
+  background-color: #ffffff;
+  font-size: 13px;
+  font-family: inter;
+  font-weight: 100;
+  color: #2b2b2b;
+}
+
+.statsButton img {
+  padding-left: 4px;
+  vertical-align: middle;
+}
+
+.collectionDetailItem {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.collectionDetailItemTitle {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.collectionDetailItemDesc {
+  font-size: 13px;
+  font-weight: 100;
+  line-height: 125%;
+}

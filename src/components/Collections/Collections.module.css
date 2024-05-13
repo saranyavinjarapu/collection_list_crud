@@ -1,0 +1,40 @@
+.collectionsMain {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.filteredCollections {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-bottom: 1px solid #d9d9d6;
+  padding-bottom: 6px;
+}
+
+.collectionInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.collectionInfoTitle {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.collectionInfoDescription {
+  font-size: 13px;
+  font-weight: 100;
+  line-height: 125%;
+}
+
+.collectionResultsCount {
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  color: #77776e;
+}

@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Navbar.module.css";
-import down_arrow_icon from "../../assets/down_arrow_icon.png";
-import expand_arrow_icon from "../../assets/expand_arrow_icon.png";
-import collection_icon from "../../assets/collection_icon.png";
+import expander_arrow_icon from "../../assets/expander_arrow.png";
+import open_arrow_icon from "../../assets/open_arrow.png";
+import collection_icon from "../../assets/collection.png";
 import new_collection_icon from "../../assets/new_collection.png";
 import { menuCollectionList } from "./helpers";
 import NavMenuItem from "./NavMenuItem";
@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <NavMenuItem
         title="My Collections"
-        expandIcon={down_arrow_icon}
+        expandIcon={expander_arrow_icon}
       ></NavMenuItem>
       <div className={styles.navContent}>
         {menuCollectionList &&
@@ -21,7 +21,7 @@ const Navbar = () => {
               key={index}
               title={item}
               displayIcon={collection_icon}
-              expandIcon={expand_arrow_icon}
+              expandIcon={open_arrow_icon}
             ></NavMenuItem>
           ))}
         <hr className={styles.divider}></hr>

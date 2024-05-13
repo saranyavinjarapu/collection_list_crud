@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Home.module.css";
 import Header from "../../components/Header/Header";
 import Navbar from "../../components/Navbar/Navbar";
+import Collections from "../../components/Collections/Collections";
 
 const Home = () => {
   return (
@@ -9,7 +10,7 @@ const Home = () => {
       <Header></Header>
       <div className={styles.main}>
         <Navbar></Navbar>
-        <div>collection</div>
+        <Collections></Collections>
       </div>
     </div>
   );
