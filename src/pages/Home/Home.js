@@ -5,7 +5,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Collections from "../../components/Collections/Collections";
 import { existingCollectionList } from "../../globals/helpers";
 import { CollectionContext } from "../../globals/helpers";
-import AddCollectionModal from "../../components/AddCollectionModal/AddCollectionModal";
+import AddCollectionModal from "../../components/CollectionModal/AddCollectionModal";
 
 const Home = () => {
   const [collectionList, setCollectionList] = useState([]);
